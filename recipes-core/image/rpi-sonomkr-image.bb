@@ -1,0 +1,53 @@
+# Base this image on rpi-hwup-image
+include recipes-core/images/rpi-hwup-image.bb
+
+IMAGE_FEATURES += "ssh-server-openssh "
+ 
+IMAGE_INSTALL_append = " sonomkr-daemon"
+
+IMAGE_INSTALL_append = " gdbserver"
+IMAGE_INSTALL_append = " connman"
+IMAGE_INSTALL_append = " connman-client"
+IMAGE_INSTALL_append = " openssh-sftp-server"
+IMAGE_INSTALL_append = " netcat"
+IMAGE_INSTALL_append = " ncurses-libncurses"
+IMAGE_INSTALL_append = " libasound"
+IMAGE_INSTALL_append = " libicui18n"
+IMAGE_INSTALL_append = " logrotate"
+IMAGE_INSTALL_append = " ntp"
+IMAGE_INSTALL_append = " libusb1"
+IMAGE_INSTALL_append = " usbutils"
+IMAGE_INSTALL_append = " udev"
+IMAGE_INSTALL_append = " usb-modeswitch-data"
+IMAGE_INSTALL_append = " usbpath"
+IMAGE_INSTALL_append = " file"
+IMAGE_INSTALL_append = " pure-ftpd"
+IMAGE_INSTALL_append = " ppp"
+IMAGE_INSTALL_append = " qtbase"
+IMAGE_INSTALL_append = " qtbase-tools"
+IMAGE_INSTALL_append = " alsa-state"
+IMAGE_INSTALL_append = " alsa-utils"
+IMAGE_INSTALL_append = " util-linux"
+IMAGE_INSTALL_append = " spitools"
+IMAGE_INSTALL_append = " wget"
+IMAGE_INSTALL_append = " vim"
+IMAGE_INSTALL_append = " libnewt"
+IMAGE_INSTALL_append = " parted"
+IMAGE_INSTALL_append = " i2c-tools"
+IMAGE_INSTALL_append = " binutils"
+IMAGE_INSTALL_append = " make"
+
+IMAGE_INSTALL_append = " python3"
+IMAGE_INSTALL_append = " python3-modules"
+IMAGE_INSTALL_append = " python3-numpy"
+IMAGE_INSTALL_append = " python3-dbus"
+IMAGE_INSTALL_append = " python3-pyserial"
+IMAGE_INSTALL_append = " python-dbus"
+IMAGE_INSTALL_append = " python-modules"
+IMAGE_INSTALL_append = " python-smbus"
+IMAGE_INSTALL_append = " python-numeric"
+
+IMAGE_INSTALL_append = " opkg"
+
+CORE_IMAGE_EXTRA_INSTALL += " sonomkr-files"
+
