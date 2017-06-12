@@ -4,8 +4,6 @@ HOMEPAGE = "http://www.sonomkr.fr/"
 LICENSE = "AGPLv3"
 LIC_FILES_CHKSUM = "file://${WORKDIR}/git/LICENSE;md5=3e00ca6129dc8358315015204ab9fe15"
 
-FILESEXTRAPATHS_prepend := "/home/valoo/Qt/Projects:"
-
 PR = "r01"
 
 DEPENDS = "ncurses alsa-lib qtbase"

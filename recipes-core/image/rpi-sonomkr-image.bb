@@ -2,8 +2,10 @@
 include recipes-core/images/rpi-hwup-image.bb
 
 IMAGE_FEATURES += "ssh-server-openssh "
- 
+
 IMAGE_INSTALL_append = " sonomkr-daemon"
+IMAGE_INSTALL_append = " sonomkr-api"
+IMAGE_INSTALL_append = " sonomkrctl"
 
 IMAGE_INSTALL_append = " gdbserver"
 IMAGE_INSTALL_append = " connman"
@@ -30,22 +32,31 @@ IMAGE_INSTALL_append = " alsa-utils"
 IMAGE_INSTALL_append = " util-linux"
 IMAGE_INSTALL_append = " spitools"
 IMAGE_INSTALL_append = " wget"
+IMAGE_INSTALL_append = " git"
+IMAGE_INSTALL_append = " gcc gcc-symlinks"
+IMAGE_INSTALL_append = " g++ g++-symlinks"
+IMAGE_INSTALL_append = " binutils binutils-symlinks"
+IMAGE_INSTALL_append = " rsync"
+IMAGE_INSTALL_append = " make"
 IMAGE_INSTALL_append = " vim"
 IMAGE_INSTALL_append = " libnewt"
 IMAGE_INSTALL_append = " parted"
 IMAGE_INSTALL_append = " i2c-tools"
-IMAGE_INSTALL_append = " binutils"
-IMAGE_INSTALL_append = " make"
+IMAGE_INSTALL_append = " nodejs"
+
 
 IMAGE_INSTALL_append = " python3"
 IMAGE_INSTALL_append = " python3-modules"
 IMAGE_INSTALL_append = " python3-numpy"
 IMAGE_INSTALL_append = " python3-dbus"
 IMAGE_INSTALL_append = " python3-pyserial"
+IMAGE_INSTALL_append = " python3-pip"
 IMAGE_INSTALL_append = " python-dbus"
 IMAGE_INSTALL_append = " python-modules"
 IMAGE_INSTALL_append = " python-smbus"
 IMAGE_INSTALL_append = " python-numeric"
+IMAGE_INSTALL_append = " python-pip"
+IMAGE_INSTALL_append = " python-distribute"
 
 IMAGE_INSTALL_append = " opkg"
 
